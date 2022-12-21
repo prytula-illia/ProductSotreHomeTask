@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAL</name>
+    </assembly>
+    <members>
+        <member name="T:DAL.Entities.Category">
+            <summary>
+            Category of the products in the store
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Category.CategoryID">
+            <summary>
+            Category id
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Category.CategoryName">
+            <summary>
+            Name of the category
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Category.Description">
+            <summary>
+            Category description
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Category.Picture">
+            <summary>
+            Picture to represent category formated as byte array
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.FileUpload">
+            <summary>
+            File with image
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.FileUpload.Id">
+            <summary>
+            Image id
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.FileUpload.FormFile">
+            <summary>
+            Image placeholder
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Product">
+            <summary>
+            Product in the store
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.ProductID">
+            <summary>
+            Product Id
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.ProductName">
+            <summary>
+            Name of the product
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.SupplierID">
+            <summary>
+            Supplier id
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.CategoryID">
+            <summary>
+            Category id
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.QuantityPerUnit">
+            <summary>
+            Quantity per unit
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.UnitPrice">
+            <summary>
+            Price per unit
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.UnitsInStock">
+            <summary>
+            Avaliable units in stock
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.UnitsOnOrder">
+            <summary>
+            Units on order
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.ReorderLevel">
+            <summary>
+            Reorder level
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.Product.Discontinued">
+            <summary>
+            Does product have discount
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.ProductViewModel">
+            <summary>
+            View model of the product
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.ProductID">
+            <summary>
+            Product id
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.ProductName">
+            <summary>
+            Name of the product
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.SupplierName">
+            <summary>
+            Supplier name
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.CategoryName">
+            <summary>
+            Category name
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.QuantityPerUnit">
+            <summary>
+            Quantity per unit
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.UnitPrice">
+            <summary>
+            Price of the unit
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.UnitsInStock">
+            <summary>
+            How much unit in the stock
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.UnitsOnOrder">
+            <summary>
+            Units on order
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.ReorderLevel">
+            <summary>
+            Reorder level
+            </summary>
+        </member>
+        <member name="P:DAL.Entities.ProductViewModel.Discontinued">
+            <summary>
+            Does product have discount
+            </summary>
+        </member>
+    </members>
+</doc>

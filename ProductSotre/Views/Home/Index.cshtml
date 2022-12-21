@@ -1,0 +1,12 @@
+﻿@using ProductSotre.Models.Helpers
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "SecondLayout";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4">Welcome</h1>
+    <p>This is my site for WEB .NET Mentoring Program #9.</p>
+    @Html.NorthwindImageLink(1, "Sponge bob image")
+    <northwind-link northwind-id="2" link-text="Illia image"></northwind-link>
+</div>

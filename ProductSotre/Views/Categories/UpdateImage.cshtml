@@ -1,0 +1,16 @@
+﻿@model DAL.Entities.FileUpload
+
+<form enctype="multipart/form-data" method="post">
+    <dl>
+        <dt>
+            <input type="hidden" asp-for="Id" />
+        </dt>
+        <dt>
+            <label asp-for="FormFile">Your file: </label>
+        </dt>
+        <dd>
+            <input asp-for="FormFile" type="file">
+        </dd>
+    </dl>
+    <input asp-page-handler="Upload" class="btn btn-success my-2" type="submit" value="Upload">
+</form>

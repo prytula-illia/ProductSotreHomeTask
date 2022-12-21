@@ -1,0 +1,12 @@
+﻿@model BreadcrumbModel
+
+<nav aria-label="breadcrumb" style="background-color: #f2f2f3">
+    <div class="mt-max-size">
+        <ol class="breadcrumb">
+            @foreach (var link in Model.BreadcrumbLinks.OrderBy(x => x.Index))
+            {
+                <li class="breadcrumb-item active mt-bread-item" aria-current="page"><a href="@link.Url">@link.Title</a></li>
+            }
+        </ol>
+    </div>
+</nav>

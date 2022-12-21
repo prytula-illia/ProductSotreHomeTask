@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DAL.Entities.Category>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+@section Footer{
+    <footer class="container">
+                <p>Sorry, for now you cannot edit the categories.</p>
+    </footer>
+}
+
+<h1 class="my-3">Categories</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Picture)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <a asp-controller="Categories" asp-action="GetImage" asp-route-id="@item.CategoryID" type="button" class="btn btn-secondary">Image</a>
+
+                <northwind-image-link northwind-id="1" link-text="Sponge bob"></northwind-image-link>
+                <a asp-action="UpdateImage" asp-route-id="@item.CategoryID" type="button" class="btn btn-secondary">Upload new image</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
